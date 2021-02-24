@@ -1,27 +1,44 @@
-# Projet_2
+# Projet_2 Web Scrapping
 
-    Ce script permet de parcourire le site http://books.toscrape.com/ par catégorie et d'enregistrer 
-dans un fichier csv différentes informations a propos de chaque livre (Titre, prix, image ...)
 
-# Environement
+Ce script permet de parcourire le site http://books.toscrape.com/ par catégorie de livre et d'enregistrer 
+dans un fichier csv diffèrentes informations à propos de chaque livre (Titre, prix, image ...)
 
-    L'environement virtuel utilisé :
+Les différents fichiers et images sont stockés dans les dossiers, générés automatiquement, nommés respectivement BookData et Img
 
-        Sur linux :
-    <code>python3 -m venv .venv</code>
 
-    Pout l'activer :
-    <code>source .venv/bin/activate</code>
+# Setup environement
 
-        Sur Windows :
-    <code>py -3 -m venv .venv</code>
-    Pout l'activer :
-    <code>.venv/scripts/activate</code>
+Pour installer l'environement virtuel 
+<hr/>
 
+Sous Linux :
+
+    python3 -m venv .venv
+
+Pour l'activer :
+ 
+    source .venv/bin/activate
+<hr/>
+
+Sous Windows :
     
-# Pip
+    py -3 -m venv .venv
+    
+Pour l'activer :
 
+    .venv/scripts/activate
 
-# Execution
+# Liste des modules ou packages à intsaller
+
+Pour le télécharger : 
+  
+    pip install bs4
+ 
+# Exécuter le programme
+
+Pour l'éxecuter :
+
+     python3 __main__.py
 
 
