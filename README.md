@@ -5,17 +5,17 @@ dans un fichier csv différentes informations a propos de chaque livre (Titre, p
 
 # Environement
 
-L'environement virtuel utilisé :
+Pour installer l'environement virtuel 
 
- Sur linux :
+Sous Linux :
  
     python3 -m venv .venv
 
- Pour l'activer :
+Pour l'activer :
  
     source .venv/bin/activate
 
-Sur Windows :
+Sous Windows :
 
     py -3 -m venv .venv
     
