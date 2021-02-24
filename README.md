@@ -1,4 +1,5 @@
-# Projet_2 Web Scrapping
+<h1>Projet_2 Web Scrapping<h1>
+<hr/>
 
 Ce script permet de parcourire le site http://books.toscrape.com/ par catégorie de livre et d'enregistrer 
 dans un fichier csv diffèrentes informations à propos de chaque livre (Titre, prix, image ...)
