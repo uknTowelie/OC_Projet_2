@@ -1,10 +1,11 @@
-<h1>Projet_2 Web Scrapping<h1>
-<hr/>
+<h1>Projet_2 Web Scrapping</h1>
+
 
 Ce script permet de parcourire le site http://books.toscrape.com/ par catégorie de livre et d'enregistrer 
 dans un fichier csv diffèrentes informations à propos de chaque livre (Titre, prix, image ...)
 
 Les différents fichiers et images sont stockés dans les dossiers, générés automatiquement, nommés respectivement BookData et Img
+<hr/>
 
 # Setup environement
 
@@ -27,14 +28,14 @@ Sous Windows :
 Pour l'activer :
 
     .venv/scripts/activate
-
+<hr/>
 # Liste des modules ou packages à intsaller
 
 Pour le télécharger : 
   
     pip install bs4
-   
-   
+ <hr/>
+ 
 # Exécuter le programme
 
 Pour l'éxecuter :
