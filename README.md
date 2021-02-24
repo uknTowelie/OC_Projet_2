@@ -6,7 +6,7 @@ dans un fichier csv différentes informations a propos de chaque livre (Titre, p
 # Environement
 
 L'environement virtuel utilisé :
-</br>
+
  Sur linux :
  
     python3 -m venv .venv
