@@ -8,15 +8,15 @@ Les différents fichiers et images sont stockés dans les dossiers, générés a
 # Setup environement
 
 Pour installer l'environement virtuel 
-
+<hr/>
 Sous Linux :
- 
+
     python3 -m venv .venv
 
 Pour l'activer :
  
     source .venv/bin/activate
-
+<hr/>
 Sous Windows :
     
     py -3 -m venv .venv
