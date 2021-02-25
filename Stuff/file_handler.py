@@ -1,21 +1,30 @@
 from requests import get
 from csv import writer
-from re import search, sub
-from os import mkdir
+from re import sub
+from os import mkdir, path
+
 
 def CreateDir():
+    """Crée les dossiers BookData et Img si inexistant"""
 
-    try:
+    if not path.isdir('Stuff/BookData'):
         mkdir('Stuff/BookData')
         mkdir('Stuff/Img')
-    except:
+    else:
         print("Directory exist")
 
-def createCsv(file_name):
-    # Fonction permettant de creer le fichier csv et d'initialiser les colonnes
 
-    file_name = sub("\s","_",file_name)
-    with open("./Stuff/BookData/" + str(file_name) + '.csv','w',newline='') as csv_file:
+def createCsv(file_name):
+    """Crée et initialise les colonnes d'un fichier csv
+
+    Args:
+        file_name (str): nom du fichier à créer
+    """
+
+    file_name = sub(r'\s', "_", file_name)
+    with open("./Stuff/BookData/" + str(file_name) + '.csv',
+              'w',
+              newline='') as csv_file:
         f_writer = writer(csv_file)
         f_writer.writerow([
             'product_page_url',
@@ -30,11 +39,20 @@ def createCsv(file_name):
             'image_url'
         ])
 
-def addToCsv(table, file_name):
-    # Ecrit le contenu d'un tableau dans un fichier csv avec son nom passer en parametre
 
-    file_name = sub("\s","_",file_name)
-    with open("./Stuff/BookData/" + str(file_name) + '.csv','a',newline='') as csv_file:
+def addToCsv(table, file_name):
+    """Ajoute les informations d'un livre a un fichier csv
+
+    Args:
+        table (multiple type): tableau qui contient
+        les différentes informations d'un livre
+        file_name (str): nom du fichier auquel on ajoute le contenu du tableau
+    """
+
+    file_name = sub(r'\s', "_", file_name)
+    with open("./Stuff/BookData/" + str(file_name) + '.csv',
+              'a',
+              newline='') as csv_file:
         f_writer = writer(csv_file)
         f_writer.writerow([
             table[0],
@@ -49,11 +67,17 @@ def addToCsv(table, file_name):
             table[9]
         ])
 
-def writeImg(img_url,book_name):
-    # Telecharge et ecrit une image depuis son url
 
-    book_name = sub("\s","_",book_name)
-    with open("./Stuff/Img/" + book_name + ".jpg","wb") as f:
+def writeImg(img_url, book_name):
+    """Télécharge et enregistre dans le dossier Img une image depuis son url
+
+    Args:
+        img_url (string): url de l'image a télécharger
+        book_name (string): nom que portera le fichier image
+    """
+
+    book_name = sub(r'\s', "_", book_name)
+    with open("./Stuff/Img/" + book_name + ".jpg", "wb") as f:
         f.write(get(img_url).content)
 
 
