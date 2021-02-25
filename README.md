@@ -35,7 +35,7 @@ Pour le télécharger :
   
     pip install bs4
  
-# Exécuter le programme
+# Usage
 
 Pour l'éxecuter :
 
