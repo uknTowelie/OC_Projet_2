@@ -31,11 +31,12 @@ Pour l'activer :
 
 # Liste des modules ou packages à intsaller
 
-Pour le télécharger : 
+Pour les télécharger : 
   
     pip install bs4
+    pip install requests
  
-# Exécuter le programme
+# Usage
 
 Pour l'éxecuter :
 
