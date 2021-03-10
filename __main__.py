@@ -1,4 +1,4 @@
-from Stuff.book_handler import getAllBookFromAllCategory
+from src.book_handler import getAllBookFromAllCategory
 
 if __name__ == "__main__":
 
