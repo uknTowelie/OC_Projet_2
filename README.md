@@ -29,12 +29,11 @@ Pour l'activer :
 
     .venv/scripts/activate
 
-# Liste des modules ou packages à intsaller
+# Packages et modules
 
 Pour les télécharger : 
   
-    pip install bs4
-    pip install requests
+    pip install -r requirement.txt
  
 # Usage
 
