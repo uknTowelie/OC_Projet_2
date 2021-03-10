@@ -1,5 +1,5 @@
 from src.file_handler import createCsv, CreateDir, writeImg, addToCsv
-from src.cst import BTS_BASE, BTS_CATALOGUE, BTS_HOME
+from src.setting import BTS_BASE, BTS_CATALOGUE, BTS_HOME
 from requests import get
 from re import search, sub
 from bs4 import BeautifulSoup
